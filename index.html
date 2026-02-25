@@ -1,0 +1,65 @@
+import Container from "./Container";
+
+export default function SiteFooter(){
+  const year = new Date().getFullYear();
+  return (
+    <footer className="mt-16 border-t border-white/10 bg-black">
+      <Container className="py-12">
+        <div className="grid gap-10 md:grid-cols-4">
+          <div>
+            <div className="text-lg font-display tracking-[0.22em]">
+              <span className="text-white">CHANDAN</span>{" "}
+              <span className="text-champagne-400">RATHOD</span>
+            </div>
+            <div className="mt-2 text-xs tracking-[0.35em] text-white/60">REAL ESTATE ADVISOR</div>
+            <p className="mt-4 text-sm text-white/70 leading-relaxed">
+              Luxury guidance for Surrey & Langley, BC. Specializing in townhomes, detached homes, first-time buyers, and real estate investment strategy.
+            </p>
+          </div>
+
+          <div>
+            <div className="text-xs tracking-[0.3em] text-champagne-400">QUICK LINKS</div>
+            <ul className="mt-4 space-y-2 text-sm text-white/70">
+              <li><a className="hover:text-white" href="/properties">Properties</a></li>
+              <li><a className="hover:text-white" href="/buying">Buying Guide</a></li>
+              <li><a className="hover:text-white" href="/selling">Selling Guide</a></li>
+              <li><a className="hover:text-white" href="/market-update/surrey">Market Updates</a></li>
+              <li><a className="hover:text-white" href="/blog">Blog</a></li>
+              <li><a className="hover:text-white" href="/communities">Communities</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="text-xs tracking-[0.3em] text-champagne-400">COMMUNITIES</div>
+            <ul className="mt-4 space-y-2 text-sm text-white/70">
+              <li><a className="hover:text-white" href="/communities/clayton-heights">Clayton Heights</a></li>
+              <li><a className="hover:text-white" href="/communities/fleetwood">Fleetwood</a></li>
+              <li><a className="hover:text-white" href="/communities/guildford">Guildford</a></li>
+              <li><a className="hover:text-white" href="/communities/willoughby">Willoughby</a></li>
+              <li><a className="hover:text-white" href="/communities/brookswood">Brookswood</a></li>
+              <li><a className="hover:text-white" href="/communities/murrayville">Murrayville</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="text-xs tracking-[0.3em] text-champagne-400">CONTACT</div>
+            <ul className="mt-4 space-y-3 text-sm text-white/70">
+              <li><a className="hover:text-white" href="tel:+17788872030">+1-778-887-2030</a></li>
+              <li><a className="hover:text-white" href="mailto:chandanr@sutton.com">chandanr@sutton.com</a></li>
+              <li>Surrey & Langley, BC</li>
+              <li><a className="hover:text-white" href="/contact">Contact Form</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-8 text-xs text-white/55 md:flex-row md:items-center md:justify-between">
+          <div>© {year} Chandan Rathod. All rights reserved.</div>
+          <div className="flex gap-4">
+            <a className="hover:text-white" href="/privacy">Privacy</a>
+            <a className="hover:text-white" href="/sitemap">Sitemap</a>
+          </div>
+        </div>
+      </Container>
+    </footer>
+  );
+}
